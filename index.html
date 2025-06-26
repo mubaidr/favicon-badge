@@ -1,13 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Favicon Badge Demo</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/index.ts"></script>
+    <h1>Favicon Badge Demo</h1>
+    <button id="set-badge">Set Badge (Count 5)</button>
+    <button id="set-custom-badge">Set Custom Badge (Count 12)</button>
+    <button id="clear-badge">Clear Badge</button>
+
+    <script type="module">
+      import { setBadge, clearBadge } from "/src/index.ts";
+
+      document.getElementById("set-badge").addEventListener("click", () => {
+        setBadge(5);
+      });
+
+      document
+        .getElementById("set-custom-badge")
+        .addEventListener("click", () => {
+          setBadge(12, {
+            backgroundColor: "#28a745", // Green
+            textColor: "#ffffff",
+            radius: 10,
+            x: 20,
+            y: 20,
+            font: "bold 12px Arial",
+          });
+        });
+
+      document.getElementById("clear-badge").addEventListener("click", () => {
+        clearBadge();
+      });
+    </script>
   </body>
 </html>

@@ -2,7 +2,7 @@ const config = {
   entries: [
     {
       filePath: "./src/index.ts",
-      outFile: "./build/dist/index.d.ts",
+      outFile: "./build/dist/favicon-badge.d.ts",
       noCheck: false,
     },
   ],
