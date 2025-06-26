@@ -1,13 +1,13 @@
-# Favicon Badge
+# Favicon Badger
 
-`favicon-badge` is a simple yet powerful JavaScript library that allows you to dynamically modify the favicon of a webpage by adding badges such as unread counts or notification icons.
+`favicon-badger` is a simple yet powerful JavaScript library that allows you to dynamically modify the favicon of a webpage by adding badges such as unread counts or notification icons.
 
 ## Installation
 
-You can install `favicon-badge` via npm:
+You can install `favicon-badger` via npm:
 
 ```bash
-npm install favicon-badge
+npm install favicon-badger
 ```
 
 ## Features
@@ -25,7 +25,7 @@ npm install favicon-badge
 To set a badge on your favicon, use the `setBadge` function:
 
 ```javascript
-import { setBadge } from "favicon-badge";
+import { setBadge } from "favicon-badger";
 
 // Set a simple badge with count 5
 setBadge(5);
@@ -46,7 +46,7 @@ setBadge(10, {
 To clear the badge and revert to the original favicon, use the `clearBadge` function:
 
 ```javascript
-import { clearBadge } from "favicon-badge";
+import { clearBadge } from "favicon-badger";
 
 clearBadge();
 ```
@@ -79,7 +79,7 @@ Clears any active badge and attempts to revert the favicon to its original state
 
 ## Contributing
 
-We welcome contributions to `favicon-badge`! To contribute, please follow these steps:
+We welcome contributions to `favicon-badger`! To contribute, please follow these steps:
 
 1.  **Fork the repository.**
 2.  **Clone your forked repository** to your local machine.

@@ -38,7 +38,7 @@ interface MockCanvas {
   height: number;
 }
 
-describe("Favicon Badge", () => {
+describe("Favicon Badger", () => {
   let link: HTMLLinkElement;
   let originalFaviconHref: string | null;
   let mockContext: MockContext;

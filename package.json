@@ -1,11 +1,11 @@
 {
-  "name": "favicon-badge",
+  "name": "favicon-badger",
   "version": "0.0.1",
-  "module": "./dist/favicon-badge.js",
+  "module": "./dist/favicon-badger.js",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/favicon-badge.js"
+      "import": "./dist/favicon-badger.js"
     },
     "./dist/": {
       "import": "./dist/"
