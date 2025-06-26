@@ -1,6 +1,6 @@
 {
   "name": "favicon-badge",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "module": "./dist/favicon-badge.js",
   "type": "module",
   "exports": {
